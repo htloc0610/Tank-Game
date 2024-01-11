@@ -4982,7 +4982,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 546532067725505719, guid: 782826f29e933c446a884c925a78ca91, type: 3}
       propertyPath: m_Name
-      value: RockCanDestroy (16)
+      value: FlagLose
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474205593886738633, guid: 782826f29e933c446a884c925a78ca91, type: 3}
+      propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2117779489}
+    - target: {fileID: 1474205593886738633, guid: 782826f29e933c446a884c925a78ca91, type: 3}
+      propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoseBehavior, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1840656874236710229, guid: 782826f29e933c446a884c925a78ca91, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5051,7 +5059,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 546532067725505719, guid: 782826f29e933c446a884c925a78ca91, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 2117779489}
   m_SourcePrefab: {fileID: 100100000, guid: 782826f29e933c446a884c925a78ca91, type: 3}
 --- !u!1001 &909335083
 PrefabInstance:
@@ -5114,6 +5125,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1840656874236710229, guid: 782826f29e933c446a884c925a78ca91, type: 3}
   m_PrefabInstance: {fileID: 1999961495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &940212444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 546532067725505719, guid: 782826f29e933c446a884c925a78ca91, type: 3}
+  m_PrefabInstance: {fileID: 905762347}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &993282483
 GameObject:
@@ -8258,6 +8274,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 782826f29e933c446a884c925a78ca91, type: 3}
+--- !u!1 &1951072789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 546532067725505719, guid: 782826f29e933c446a884c925a78ca91, type: 3}
+  m_PrefabInstance: {fileID: 1999961495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1951072790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951072789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9286d9e7dc124fc4aae8e39c64567797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1987256808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8325,7 +8358,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 546532067725505719, guid: 782826f29e933c446a884c925a78ca91, type: 3}
       propertyPath: m_Name
-      value: RockCanDestroy (15)
+      value: FlagWin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474205593886738633, guid: 782826f29e933c446a884c925a78ca91, type: 3}
+      propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1951072790}
+    - target: {fileID: 1474205593886738633, guid: 782826f29e933c446a884c925a78ca91, type: 3}
+      propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WinBehavior, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1840656874236710229, guid: 782826f29e933c446a884c925a78ca91, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8402,7 +8443,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 546532067725505719, guid: 782826f29e933c446a884c925a78ca91, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1951072790}
   m_SourcePrefab: {fileID: 100100000, guid: 782826f29e933c446a884c925a78ca91, type: 3}
 --- !u!4 &2071930521 stripped
 Transform:
@@ -8414,6 +8458,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1840656874236710229, guid: 782826f29e933c446a884c925a78ca91, type: 3}
   m_PrefabInstance: {fileID: 905762347}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2117779489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940212444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5847fecbf01bdb4e9100ed05031d8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2127187698 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2172786942764362881, guid: 4607e5fce7c7d0449a2a94ae509cce20, type: 3}
